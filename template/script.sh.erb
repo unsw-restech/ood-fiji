@@ -28,7 +28,7 @@ cd "${HOME}"
 #
 
 module load <%= context.version %>
-export _JAVA_OPTIONS=<%= context.java_memory %>
+export _JAVA_OPTIONS=-Xmx<%= context.java_memory %>g
 
 module list
 set -x
